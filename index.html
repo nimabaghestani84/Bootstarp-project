@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.svg" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Perfume</title>
+  </head>
+  <body>
+    <header>
+      <!-- nav bar start  -->
+      <div id="up-nav">
+        <div class="logo-div">
+          <div class="img-logo">
+            <img src="images/logo.svg" alt="LOGO" />
+          </div>
+          <p>Perfume</p>
+        </div>
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="search perfume.com..."
+            class="inp-search"
+          />
+          <div class="search-icn"><i class="bx bx-search"></i></div>
+        </div>
+        <div class="nav-icn">
+          <i class="bx bxs-user"></i>
+          <i class="bx bxs-cart-alt"></i>
+        </div>
+      </div>
+      <div id="down-nav">
+        <ul class="menu-bar d-flex flex-wrap ">
+          <li><i class='bx bx-menu burger'></i></li>
+          <li class="menu-item"><i class="bx bxs-home"></i><a href="#">Home</a></li>
+          <li class="menu-item"><i class="bx bx-bell"></i><a href="#">Discount</a></li>
+          <li class="menu-item"><i class="bx bx-phone"></i><a href="#">Phone</a></li>
+          <li class="menu-item"><i class="bx bx-info-circle"></i><a href="#">Information</a></li>
+        </ul>
+      </div>
+      <div class="sec-burger">
+        <div class="nav-icn-b">
+          <i class="bx bxs-user"></i>
+          <i class="bx bxs-cart-alt"></i><br>
+        </div>
+
+          <ul class="menu-bar-b d-flex flex-wrap flex-column align-items-start justify-content-evenly gap-3 ">
+            <li class="menu-item-b fs-3 d-flex align-items-center gap-2 "><i class="bx bxs-home"></i><a href="#">Home</a></li>
+            <li class="menu-item-b fs-3 d-flex align-items-center gap-2 "><i class="bx bx-bell"></i><a href="#">Discount</a></li>
+            <li class="menu-item-b fs-3 d-flex align-items-center gap-2 "><i class="bx bx-phone"></i><a href="#">Phone</a></li>
+            <li class="menu-item-b fs-3 d-flex align-items-center gap-2 "><i class="bx bx-info-circle"></i><a href="#">Information</a></li>
+          </ul>
+      </div>
+      <!-- nav bar end  -->
+
+      <!-- banner start  -->
+      <section class="banner">
+        <div id="carouselExampleIndicators" class="carousel slide item-banner">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active border-1 border-black"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              class="border-1 border-black"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              class="border-1 border-black"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner w-100 h-100">
+            <div class="carousel-item active w-100 h-100">
+              <img
+                src="images/ferst-banner-1.jpg"
+                class="d-block w-100 img-banner"
+                alt="banner"
+              />
+            </div>
+            <div class="carousel-item w-100 h-100">
+              <img
+                src="images/ferst-banner-2.jpg"
+                class="d-block w-100 img-banner"
+                alt="banner"
+              />
+            </div>
+            <div class="carousel-item w-100 h-100">
+              <img
+                src="images/ferst-banner-3.jpg"
+                class="d-block w-100 img-banner"
+                alt="banner"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- banner end  -->
+    </header>
+    <!-- cart start  -->
+
+    <section
+      class="fest-cart d-flex flex-wrap align-content-center justify-content-evenly gap-2 m-lg-5"
+    >
+      <div class="tabligh-cart m-3 shadow-lg position-relative overflow-hidden">
+        <img
+          src="images/Rectangle 9.jpg"
+          class="w-100 h-100 object-fit-cover image-ferst-cart"
+          alt="cart"
+        />
+        <div
+          class="box-cart d-flex align-content-center justify-content-center fs-4 shadow-lg"
+        >
+          <p>Women</p>
+        </div>
+      </div>
+      <div class="tabligh-cart m-3 shadow-lg position-relative overflow-hidden">
+        <img
+          src="images/Rectangle 10.png"
+          class="w-100 h-100 object-fit-cover image-ferst-cart"
+          alt="cart"
+        />
+        <div
+          class="box-cart d-flex align-content-center justify-content-center fs-4 shadow-lg"
+        >
+          <p>Men</p>
+        </div>
+      </div>
+      <div class="tabligh-cart m-3 shadow-lg position-relative overflow-hidden">
+        <img
+          src="images/Rectangle 11.png"
+          class="w-100 h-100 object-fit-cover image-ferst-cart"
+          alt="cart"
+        />
+        <div
+          class="box-cart d-flex align-content-center justify-content-center fs-4 shadow-lg"
+        >
+          <p>Original</p>
+        </div>
+      </div>
+    </section>
+    <!-- cart end  -->
+
+    <!-- cart box start  -->
+
+                                                   <!-- cart box mondeh  -->
+    <!-- cart box end  -->
+
+    <!-- lang banner start  -->
+    <section class="lang-banner w-100 my-3">
+      <img
+        src="images/Web-Banner1.jpg"
+        alt="banner"
+        class="w-100 h-100 object-fit-cover"
+      />
+    </section>
+    <!-- lang banner end  -->
+
+    <!-- brand section start  -->
+    <section
+      class="brans-text d-flex flex-column align-items-center justify-content-center gap-2 w-100"
+    >
+      <h2 class="underline-text">best brands perfume</h2>
+      <section
+        class="sec-brand d-flex flex-wrap align-content-center justify-content-center gap-5 w-100 p-2"
+      >
+        <div class="brand-cart shadow-lg">
+          <img
+            src="images/zara-brand-40033.png"
+            alt="brand"
+            class="w-100 h-50 m-3"
+          />
+        </div>
+        <div class="brand-cart shadow-lg">
+          <img src="images/brand2 (2).png" alt="brand" class="w-100 h-50 m-3" />
+        </div>
+        <div class="brand-cart shadow-lg">
+          <img src="images/brand3.png" alt="brand" class="w-100 h-100 m-3" />
+        </div>
+        <div class="brand-cart shadow-lg">
+          <img src="images/brand4.png" alt="brand" class="w-100 h-100 m-3" />
+        </div>
+        <div class="brand-cart shadow-lg">
+          <img src="images/brand5.png" alt="brand" class="w-100 h-75 m-3" />
+        </div>
+        <div class="brand-cart shadow-lg">
+          <img src="images/brand6.png" alt="brand" class="w-50 h-100 m-3" />
+        </div>
+      </section>
+    </section>
+    <!-- brand section end  -->
+
+    <!-- middel banner start  -->
+
+    <section
+      class="middel-banner d-flex flex-wrap align-content-center justify-content-center m-5"
+    >
+      <div class="middel-img-banner overflow-hidden">
+        <img
+          src="images/left.png"
+          alt="middel banner"
+          class="w-100 h-100 object-fit-cover"
+        />
+      </div>
+      <div class="middel-img-banner overflow-hidden">
+        <img
+          src="images/right.png"
+          alt="middel banner"
+          class="w-100 h-100 object-fit-cover"
+        />
+      </div>
+    </section>
+    <!-- middel banner end  -->
+
+    <!-- news carts start  -->
+
+    <section class="news-sec w-100 d-flex align-items-center justify-content-center gap-3 flex-column p-3 ">
+    <h2 class="underline-text">new products</h2>
+      <div class="carts d-flex align-items-center justify-content-between gap-3 p-3 flex-wrap ">
+        <div class="cart-new shadow-lg ">
+          <div class="img-news">
+            <img src="images/news1.png" alt="news" />
+          </div>
+          <div class="text-news d-flex  flex-column gap-2 align-items-center justify-content-center ">
+            <p class="light-text m-1 align-content-start ">1 mehr-from admin</p>
+            <h3 class="underline-text">New creeds perfom</h3>
+            <p class="long-text m-3 ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex autem
+              sapiente consequuntur esse minus sed. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+
+        <div class="cart-new shadow-lg ">
+          <div class="img-news">
+            <img src="images/news2.png" alt="news" />
+          </div>
+          <div class="text-news d-flex  flex-column gap-2 align-items-center justify-content-center ">
+            <p class="light-text m-1 align-content-start ">1 mehr-from admin</p>
+            <h3 class="underline-text">Best men perfumes</h3>
+            <p class="long-text m-3 ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex autem
+              sapiente consequuntur esse minus sed. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+
+        <div class="cart-new shadow-lg ">
+          <div class="img-news">
+            <img src="images/news3.png" alt="news" />
+          </div>
+          <div class="text-news d-flex  flex-column gap-2 align-items-center justify-content-center ">
+            <p class="light-text m-1 align-content-start ">1 mehr-from admin</p>
+            <h3 class="underline-text">Best women perfoms</h3>
+            <p class="long-text m-3 ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex autem
+              sapiente consequuntur esse minus sed. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+
+        <div class="cart-new shadow-lg ">
+          <div class="img-news">
+            <img src="images/news4.png" alt="news" />
+          </div>
+          <div class="text-news d-flex  flex-column gap-2 align-items-center justify-content-center ">
+            <p class="light-text m-1 align-content-start ">1 mehr-from admin</p>
+            <h3 class="underline-text">Best fall Perfom</h3>
+            <p class="long-text m-3 ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex autem
+              sapiente consequuntur esse minus sed. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+          </div>
+    </section>
+    <!-- news carts end  -->
+
+    <!-- media start  -->
+
+    <section class="medias d-flex align-items-center justify-content-start gap-3 p-4 ">
+      <ul class="d-flex align-items-center justify-content-center gap-3 m-3 ">
+        <li>Following us:</li>
+        <li class="fs-3 m-2"><i class='bx bxl-instagram'></i></li>
+        <li class="fs-3 m-2"><i class='bx bxl-telegram'></i></li>
+        <li class="fs-3 m-2"><i class='bx bxl-facebook'></i></li>
+      </ul>
+    </section>
+    <!-- media end  -->
+
+    <!-- fotter start  -->
+
+    <footer>
+      <div class="footer justify-content-evenly ">
+        <div class="footer-item">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">For men</a></li>
+            <li><a href="#">For women</a></li>
+            <li><a href="#">For season</a></li>
+            <li><a href="#">Social Media</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h3>Media</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">Whatsapp</a></li>
+            <li><a href="#">Phone</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h3>Brands</h3>
+          <ul>
+            <li><a href="#">Creed</a></li>
+            <li><a href="#">Zara</a></li>
+            <li><a href="#">cucci</a></li>
+            <li><a href="#">Versach</a></li>
+            </ul>
+        </div>
+      </div>
+      <section id="small-footer">
+        <div
+          class="accordion accordion-flush w-100 top-0"
+          id="accordionFlushExample"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+              Products
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="d-flex flex-column align-items-start justify-content-center gap-2 ">
+                  <li><a href="#">For men</a></li>
+                  <li><a href="#">For women</a></li>
+                  <li><a href="#">For season</a></li>
+                  <li><a href="#">Social Media</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Media
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="d-flex flex-column align-items-start justify-content-center gap-2 ">
+                  <li><a href="#">Instegaram</a></li>
+                  <li><a href="#">Telegram</a></li>
+                  <li><a href="#">Whatsapp</a></li>
+                  <li><a href="#">Phone</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Brands
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="d-flex flex-column align-items-start justify-content-center gap-2 ">
+                  <li><a href="#">Creed</a></li>
+                  <li><a href="#">Zara</a></li>
+                  <li><a href="#">Cucci</a></li>
+                  <li><a href="#">Versach</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <hr />
+      <div>
+        <div class="down-footer">
+          <div class="left-footer">
+            <p>Copyright &copy 2024 Nima Baghestani</p>
+          </div>
+          <div class="right-footer">
+            <ul>
+              <li><a href="#" class="link-text"> Cookie</a></li>
+              <li><a href="#" class="link-text"> Privacy Policy</a></li>
+              <li><a href="#" class="link-text"> Trems of Use</a></li>
+              <li><a href="#" class="link-text"> Contact Us</a></li>
+              <li>
+                <a href="#" class="link-text">
+                  <i class="bx bx-globe" id="global"></i> Global / English</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
